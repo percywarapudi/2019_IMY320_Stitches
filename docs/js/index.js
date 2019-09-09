@@ -21,13 +21,16 @@ function toggleSingleComplete(proj){
 	//alert(proj);
 	switch(proj) {
 		case "1":
-			completes[0].classList.toggle('complete',true);
+			val = completes[0].classList.toggle('complete');
 			completes[1].classList.toggle('complete',false);
 			completes[2].classList.toggle('complete',false);
 			completes[3].classList.toggle('complete',false);
 			completes[4].classList.toggle('complete',false);
 			
-			document.getElementById("proj1").style.display = "block";
+			if(val)
+				document.getElementById("proj1").style.display = "block";
+			else
+				document.getElementById("proj1").style.display = "none";
 			document.getElementById("proj2").style.display = "none";
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
@@ -35,13 +38,16 @@ function toggleSingleComplete(proj){
 			break;
 		case "2":
 			completes[0].classList.toggle('complete',false);
-			completes[1].classList.toggle('complete',true);
+			val = completes[1].classList.toggle('complete');
 			completes[2].classList.toggle('complete',false);
 			completes[3].classList.toggle('complete',false);
 			completes[4].classList.toggle('complete',false);
 			
 			document.getElementById("proj1").style.display = "none";
-			document.getElementById("proj2").style.display = "block";
+			if(val)
+				document.getElementById("proj2").style.display = "block";
+			else
+				document.getElementById("proj2").style.display = "none";
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
@@ -49,13 +55,16 @@ function toggleSingleComplete(proj){
 		case "3":
 			completes[0].classList.toggle('complete',false);
 			completes[1].classList.toggle('complete',false);
-			completes[2].classList.toggle('complete',true);
+			val = completes[2].classList.toggle('complete');
 			completes[3].classList.toggle('complete',false);
 			completes[4].classList.toggle('complete',false);
 			
 			document.getElementById("proj1").style.display = "none";
 			document.getElementById("proj2").style.display = "none";
-			document.getElementById("proj3").style.display = "block";
+			if(val)
+				document.getElementById("proj3").style.display = "block";
+			else
+				document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			break;
@@ -63,29 +72,46 @@ function toggleSingleComplete(proj){
 			completes[0].classList.toggle('complete',false);
 			completes[1].classList.toggle('complete',false);
 			completes[2].classList.toggle('complete',false);
-			completes[3].classList.toggle('complete',true);
+			val = completes[3].classList.toggle('complete');
 			completes[4].classList.toggle('complete',false);
 			
 			document.getElementById("proj1").style.display = "none";
 			document.getElementById("proj2").style.display = "none";
 			document.getElementById("proj3").style.display = "none";
-			document.getElementById("proj4").style.display = "block";
+			if(val)
+				document.getElementById("proj4").style.display = "block";
+			else	
+				document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			break;
-		default:
-			//alert(previous.id);
-			//previous.classList.toggle('complete');
+		case "5":
 			completes[0].classList.toggle('complete',false);
 			completes[1].classList.toggle('complete',false);
 			completes[2].classList.toggle('complete',false);
 			completes[3].classList.toggle('complete',false);
-			completes[4].classList.toggle('complete',true);
+			val = completes[4].classList.toggle('complete');
 			
 			document.getElementById("proj1").style.display = "none";
 			document.getElementById("proj2").style.display = "none";
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
-			document.getElementById("proj5").style.display = "block";
+			if(val)
+				document.getElementById("proj5").style.display = "block";
+			else
+				document.getElementById("proj5").style.display = "none";
+			break;
+		default:
+			completes[0].classList.toggle('complete',false);
+			completes[1].classList.toggle('complete',false);
+			completes[2].classList.toggle('complete',false);
+			completes[3].classList.toggle('complete',false);
+			completes[4].classList.toggle('complete',false);
+			
+			document.getElementById("proj1").style.display = "none";
+			document.getElementById("proj2").style.display = "none";
+			document.getElementById("proj3").style.display = "none";
+			document.getElementById("proj4").style.display = "none";
+			document.getElementById("proj5").style.display = "none";
 	}
 	
 }
@@ -116,4 +142,3 @@ four.addEventListener("click", function() {
 five.addEventListener("click", function() {
 	toggleSingleComplete("5");
 });
-toggleSingleComplete("5");

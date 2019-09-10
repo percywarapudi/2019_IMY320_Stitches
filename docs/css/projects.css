@@ -1,3 +1,16 @@
+
+#titleScreen {
+    height: 100vh;
+    background-color:#212120;
+    background-size: cover;
+    font-family: sans-serif;
+     margin-top: 0px;
+     padding: 0px;
+     margin-bottom:0%;
+     max-width: 100%;
+     overflow-x: hidden;
+}
+
 .timeline {
 	list-style-type: none;
 	display: flex;

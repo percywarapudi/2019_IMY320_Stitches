@@ -170,7 +170,7 @@ html, body {
 	height: 375px;
 	float: left;
 	border: 2px solid rgb(68, 67, 67);
-
+	display:inline-block;
 
 }
 

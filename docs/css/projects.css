@@ -169,6 +169,8 @@ html, body {
 	width: 275px;
 	height: 375px;
 	float: left;
+	border: 2px solid rgb(68, 67, 67);
+
 
 }
 
@@ -178,8 +180,16 @@ html, body {
 	width: 200px;
 	position: center;
 	margin-top: 10%;
-	margin-left: 15%;
+	margin-left: 10%;
+	border: 2px solid rgb(68, 67, 67);
+}
 
+.name
+{
+	bottom:5%;
+	position:relative;
+	text-align: center; 
+	color:white;
 }
 
 

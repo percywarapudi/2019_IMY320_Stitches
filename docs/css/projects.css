@@ -1,25 +1,3 @@
-#title{
-  width:20%;
-  left:60%;
-  top:5%;
-  position:absolute;
-  z-index:9;
-  border-width:2px;
-  border-color: black;
-}
-
-#titleScreen {
-    height: 100vh;
-    background-color:#212120;
-    background-size: cover;
-    font-family: sans-serif;
-     margin-top: 0px;
-     padding: 0px;
-     margin-bottom:0%;
-     max-width: 100%;
-     overflow-x: hidden;
-}
-
 .timeline {
 	list-style-type: none;
 	display: flex;

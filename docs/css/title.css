@@ -55,7 +55,7 @@ animation-duration: 3s;
 animation-direction: alternate;
 }
 
-
+/*
 #cf4 img {
   width: 70%;
   position:absolute;
@@ -155,7 +155,7 @@ animation-iteration-count: infinite;
 animation-duration: 3s;
 animation-direction: alternate;
 }
-
+*/
 #title{
   width:90%;
   left:18%;

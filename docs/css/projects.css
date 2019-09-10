@@ -1,3 +1,12 @@
+#title{
+  width:20%;
+  left:60%;
+  top:5%;
+  position:absolute;
+  z-index:9;
+  border-width:2px;
+  border-color: black;
+}
 
 #titleScreen {
     height: 100vh;

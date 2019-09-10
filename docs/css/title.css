@@ -1,4 +1,4 @@
-/*html{
+html{
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -54,8 +54,7 @@ animation-iteration-count: infinite;
 animation-duration: 3s;
 animation-direction: alternate;
 }
-*/
-/*
+
 #cf4 img {
   width: 70%;
   position:absolute;
@@ -155,8 +154,8 @@ animation-iteration-count: infinite;
 animation-duration: 3s;
 animation-direction: alternate;
 }
-*/
-/*
+
+
 #title{
   width:90%;
   left:18%;
@@ -170,7 +169,7 @@ animation-direction: alternate;
 
 }
 
-*/
+
 .arrow{
     position: absolute;
     bottom: 10%;

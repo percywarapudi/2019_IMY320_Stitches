@@ -5,6 +5,12 @@
 	justify-content: center;
 }
 
+#secondScreen{
+	background-image: url(images/2nd.jpg);
+	background-attachment: fixed;
+
+
+}
 
 .li {
 	transition: all 200ms ease-in;
@@ -30,6 +36,7 @@
 .status h4 {
 	font-weight: 600;
 }
+
 #h{
 	font-size: 24px;
 	display: flex;
@@ -73,46 +80,47 @@ html, body {
 	align-items: center;
 	justify-content: center;
 }
+
 .ttap {
-  width: 730px;
-  height: 730px;
-  border: 10px solid #eae7dc;
-  margin-left: 25%;
-  margin-top: 30px;
-  perspective: 700px;
-}
-
-.cube {
-  width: 700px;
-  height: 700px;
-  border: 5px solid grey;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-350px);
-  transition: transform 1.8s;
-}
-
-.home  { transform: translateZ(-350px) rotateY(   0deg); }
-.wa { transform: translateZ(-350px) rotateY( -90deg); }
-.og   { transform: translateZ(-350px) rotateY(-180deg); }
-.os   { transform: translateZ(-350px) rotateY(  90deg); }
-.cc{ transform: translateZ(-350px) rotateX( -90deg); }
-.dl{ transform: translateZ(-350px) rotateX(  90deg); }
-
-.face {
-   position: absolute;
-  width: 700px;
-  height: 700px;
-  border: 5px gradient solid grey;
-  line-height: 700px;
-  font-size: 35px;
- 
+	width: 730px;
+	height: 730px;
+	border: 10px solid #eae7dc;
+	margin-left: 25%;
+	margin-top: 30px;
+	perspective: 700px;
+  }
   
+  .cube {
+	width: 700px;
+	height: 700px;
+	border: 5px solid grey;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: translateZ(-350px);
+	transition: transform 1.8s;
+  }
+  
+  .home  { transform: translateZ(-350px) rotateY(   0deg); }
+  .wa { transform: translateZ(-350px) rotateY( -90deg); }
+  .og   { transform: translateZ(-350px) rotateY(-180deg); }
+  .os   { transform: translateZ(-350px) rotateY(  90deg); }
+  .cc{ transform: translateZ(-350px) rotateX( -90deg); }
+  .dl{ transform: translateZ(-350px) rotateX(  90deg); }
+  
+  .face {
+	 position: absolute;
+	width: 700px;
+	height: 700px;
+	border: 5px gradient solid grey;
+	line-height: 700px;
+	font-size: 35px;
+   
+	
+  
+  }
 
-}
-
-
-.home{
+  
+  .home{
 	background-image: radial-gradient(rgba(233,128,116,0.7),grey);
 }
 .wa{
@@ -173,4 +181,5 @@ html, body {
 	margin-left: 15%;
 
 }
+
 

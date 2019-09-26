@@ -166,11 +166,6 @@ html, body {
 
 #division{
 	background-color: #eae7dc;
-	height:600px;
-=======
-	background-color: #eae7dc;
-	height:600px;
->>>>>>> a28667cfcfcf202f576632801cdeb096587cc27e
 	font-size: 28px;
 	margin-top: 200px;
 	background-size: cover;
@@ -189,6 +184,7 @@ html, body {
 
 .images
 {
+    margin-top: 10px;
 	height: 270px;
 	width: 170px;
 }

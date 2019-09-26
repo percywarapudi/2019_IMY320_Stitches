@@ -1,6 +1,6 @@
 //1. Default Behaviour
 var completes = document.querySelectorAll(".complete");
-var toggleButton = document.getElementById("toggleButton");
+//var toggleButton = document.getElementById("toggleButton");
 
 function toggleComplete(){
   var lastComplete = completes[completes.length - 1];
@@ -8,7 +8,7 @@ function toggleComplete(){
 }
 
 $(document).ready(function() {
-	toggleButton.onclick = toggleComplete();
+	//toggleButton.onclick = toggleComplete();
 });
 
 

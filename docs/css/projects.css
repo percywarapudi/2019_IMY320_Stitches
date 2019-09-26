@@ -151,14 +151,12 @@ html, body {
 	background-image: linear-gradient(white,white,white,#eae7dc)
 }
 #division{
-
 	background-color: #eae7dc;
-	height:700px;
+	height:600px;
 	font-size: 28px;
 	margin-top: 200px;
 	background-size: cover; 
 	width: cover;
-
 }
 
 .emp{
@@ -169,17 +167,12 @@ html, body {
 	width: 275px;
 	height: 375px;
 	float: left;
-
 }
 
 .images
 {
-	height: 250px;
-	width: 200px;
-	position: center;
-	margin-top: 10%;
-	margin-left: 15%;
-
+	height: 270px;
+	width: 170px;
 }
 
 

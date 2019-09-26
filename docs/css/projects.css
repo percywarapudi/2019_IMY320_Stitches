@@ -32,8 +32,11 @@
 	border-top: 2px solid #D6DCE0;
 	position: relative;
 	transition: all 200ms ease-in;
+	margin-top: 50px;
+	width: 200px;
 }
 .status h4 {
+	margin-top: 45px;
 	font-weight: 600;
 }
 
@@ -44,15 +47,19 @@
 }
 .status:before {
 	content: "";
-	width: 25px;
-	height: 25px;
+	width: 90px;
+	height: 90px;
 	background-color: white;
-	border-radius: 25px;
+	border-radius: 90px;
 	border: 1px solid #ddd;
 	position: absolute;
-	top: -15px;
-	left: 42%;
+	top: -45px;
+	left: 26%;
 	transition: all 200ms ease-in;
+}
+
+.status:hover{
+	color:#E98074;
 }
 
 .li.complete .status {
@@ -89,7 +96,7 @@ html, body {
 	margin-top: 30px;
 	perspective: 700px;
   }
-  
+
   .cube {
 	width: 700px;
 	height: 700px;
@@ -99,14 +106,14 @@ html, body {
 	transform: translateZ(-350px);
 	transition: transform 1.8s;
   }
-  
+
   .home  { transform: translateZ(-350px) rotateY(   0deg); }
   .wa { transform: translateZ(-350px) rotateY( -90deg); }
   .og   { transform: translateZ(-350px) rotateY(-180deg); }
   .os   { transform: translateZ(-350px) rotateY(  90deg); }
   .cc{ transform: translateZ(-350px) rotateX( -90deg); }
   .dl{ transform: translateZ(-350px) rotateX(  90deg); }
-  
+
   .face {
 	 position: absolute;
 	width: 700px;
@@ -114,12 +121,12 @@ html, body {
 	border: 5px gradient solid grey;
 	line-height: 700px;
 	font-size: 35px;
-   
-	
-  
+
+
+
   }
 
-  
+
   .home{
 	background-image: radial-gradient(rgba(233,128,116,0.7),grey);
 }
@@ -147,15 +154,21 @@ html, body {
 .dl { transform: rotateX(-90deg) translateZ(350px); }
 
 #aboutus{
-	
-	background-image: linear-gradient(white,white,white,#eae7dc)
+
+	/*background-image: linear-gradient(white,white,white,#eae7dc)*/
 }
+
+#aboutUsDet{
+	 text-align: left;
+	 margin-left: 10px;
+	 margin-right: 10px;
+}
+
 #division{
 	background-color: #eae7dc;
-	
 	font-size: 28px;
 	margin-top: 200px;
-	background-size: cover; 
+	background-size: cover;
 	width: cover;
 }
 
@@ -175,5 +188,3 @@ html, body {
 	height: 270px;
 	width: 170px;
 }
-
-

@@ -79,7 +79,7 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj5").style.display = "none";
 			break;
 
-		case "4":
+		case "5":
 			completes[0].classList.toggle('complete',false);
 			completes[1].classList.toggle('complete',false);
 			completes[2].classList.toggle('complete',false);
@@ -92,6 +92,21 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "block";
 			break;
+
+      case "6":
+        //alert(previous.id);
+        //previous.classList.toggle('complete');
+        completes[0].classList.toggle('complete',false);
+        completes[1].classList.toggle('complete',false);
+        completes[2].classList.toggle('complete',false);
+        completes[3].classList.toggle('complete',false);
+        completes[4].classList.toggle('complete',false);
+
+        document.getElementById("proj1").style.display = "none";
+        document.getElementById("proj2").style.display = "none";
+        document.getElementById("proj3").style.display = "none";
+        document.getElementById("proj4").style.display = "none";
+        document.getElementById("proj5").style.display = "none";
 
 		default:
 			//alert(previous.id);
@@ -116,15 +131,8 @@ var checked = 0;
 var projOpt = 10;
 
 
-
 $(document).ready(function(){
 	//var checked = 0;
-	console.log(checked);
-  //$(".proj1c").fadeOut("slow");
-  //$(".proj2c").fadeOut("slow");
-  //$(".proj3c").fadeOut("slow");
-  //$(".proj4c").fadeOut("slow");
-  //$(".proj5c").fadeOut("slow");
 
 	$("#1").click(function(){
     $(".proj2c").fadeOut("slow");
@@ -143,7 +151,6 @@ $(document).ready(function(){
 			{
 				$("#projects").animate({height: "50%"});
         $(".proj1c").fadeOut("slow");
-
 				checked = 0;
 			}
 			else// if(checked == 0 )
@@ -162,8 +169,6 @@ $(document).ready(function(){
 
   $(document).ready(function(){
 	//var checked = 0;
-	console.log(projOpt);
-
 
   	$("#2").click(function(){
     $(".proj1c").fadeOut("slow");
@@ -175,10 +180,9 @@ $(document).ready(function(){
       $("#projects").animate({height: "165%"});
       $(".proj2c").fadeIn("slow");
       checked = 1;
-
     }
-  //  else if(projOpt==2)
-		else{
+		else
+    {
 			if(checked != 0 && projOpt==2)
 			{
 				$("#projects").animate({height: "50%"});
@@ -201,8 +205,6 @@ $(document).ready(function(){
 
   $(document).ready(function(){
 	//var checked = 0;
-	console.log(checked);
-
 
 	$("#3").click(function(){
     $(".proj1c").fadeOut("slow");
@@ -242,11 +244,8 @@ $(document).ready(function(){
 
   $(document).ready(function(){
 	//var checked = 0;
-	console.log(checked);
-
 
 	$("#4").click(function(){
-    $(".proj4c").fadeToggle("slow");
     $(".proj1c").fadeOut("slow");
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
@@ -288,7 +287,6 @@ $(document).ready(function(){
 
 
 	$("#5").click(function(){
-    $(".proj5c").fadeToggle("slow");
     $(".proj1c").fadeOut("slow");
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
@@ -444,4 +442,4 @@ four.addEventListener("click", function() {
 five.addEventListener("click", function() {
 	toggleSingleComplete("5");
 });
-toggleSingleComplete("5");
+toggleSingleComplete("6");

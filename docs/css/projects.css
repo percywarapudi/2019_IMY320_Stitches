@@ -178,6 +178,10 @@ html, body {
 	 margin-right: 10px;
 }
 
+.aboutPara
+{
+	padding-bottom: 100px;
+}
 #division{
 	background-color: #eae7dc;
 	font-size: 28px;
@@ -206,6 +210,9 @@ html, body {
 .devName
 {
 	font-family: "Titillium Web", sans serif;
+	padding-top: 10px;
+	color: #E98074;
+
 }
 
 #AboutUsTitle{
@@ -218,6 +225,12 @@ html, body {
 	font-family: "Titillium Web", sans serif;
 	text-decoration:underline;
 
+
+}
+
+#devHead
+{
+	/*background-color: red;*/
 }
 
 #myBtn {
@@ -238,4 +251,16 @@ html, body {
 
 #myBtn:hover {
     background-color: #555;
+}
+
+#proj1style
+{
+	position:absolute;
+	height: 110%;
+	width: 100%;
+	transform: rotate(81deg);
+	left: -510px;
+	top:145%;
+	opacity: 0.8;
+	z-index:-2;
 }

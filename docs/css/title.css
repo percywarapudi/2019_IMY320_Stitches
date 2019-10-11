@@ -6,7 +6,8 @@ html{
 
 #titleScreen {
     height: 100vh;
-    background-color:#212120;
+    background-image: url("b15.jpg");
+  /*  background-color:#212120; */
     background-size: cover;
     font-family: sans-serif;
      margin-top: 0px;

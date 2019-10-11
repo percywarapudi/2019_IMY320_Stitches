@@ -23,7 +23,11 @@
         <script src="js/jquery-2.2.0.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.menu-open').attr('checked', true);
+		});
+	</script>
 
     </head >
     <body style="background-color:rgb(250, 250, 250)" >
@@ -87,90 +91,39 @@
 <!-- 3. Projects timeline +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
-
-		<ul class="timeline" id="timeline">
-			<li class="li complete" id="1">
-	<!--			<div class="timestamp">
-					<span class="author">Web Application</span>
-					<span class="date">11 May 2017<span>
-				</div> -->
-				<div id="one"
-					class="status"
-					onMouseover="this.style.opacity=0.8"
-					style="cursor: pointer;"
-					onMouseout="this.style.opacity=1"
-					onclick="toggleSingleComplete('1')"
-				>
-					<h4> Web App </h4>
-				</div>
-			</li>
-			<li class="li complete" id="2">
-		<!--		<div class="timestamp">
-					<span class="author">Online Game</span>
-					<span class="date">11 January 2018<span>
-				</div> -->
-				<div id="two"
-					class="status"
-					onMouseover="this.style.opacity=0.8"
-					style="cursor: pointer;"
-					onMouseout="this.style.opacity=1"
-					onclick="toggleSingleComplete('2')"
-				>
-					<h4> Game </h4>
-				</div>
-			</li>
-			<li class="li complete" id="3">
-		<!--		<div class="timestamp">
-					<span class="author">Online Shopping</span>
-					<span class="date">11 August 2018<span>
-				</div> -->
-				<div id="three"
-					class="status"
-					onMouseover="this.style.opacity=0.8"
-					style="cursor: pointer;"
-					onMouseout="this.style.opacity=1"
-					onclick="toggleSingleComplete('3')"
-				>
-					<h4> ShopOnline </h4>
-				</div>
-			</li>
-			<li class="li complete" id="4">
-		<!--		<div class="timestamp">
-					<span class="author">Crytocurrency</span>
-					<span class="date">14 March 2019<span>
-				</div> -->
-				<div id="four"
-					class="status"
-					onMouseover="this.style.opacity=0.8"
-					style="cursor: pointer;"
-					onMouseout="this.style.opacity=1"
-					onclick="toggleSingleComplete('4')"
-				>
-					<h4> Film </h4>
-				</div>
-			</li>
-			<li class="li complete" id="5">
-	<!--			<div class="timestamp">
-					<span class="author">Library Aggretator</span>
-					<span class="date">25 July 2019<span>
-				</div> -->
-				<div id="five"
-					class="status"
-					onMouseover="this.style.opacity=0.8"
-					style="cursor: pointer;"
-					onMouseout="this.style.opacity=1"
-					onclick="toggleSingleComplete('5')"
-				>
-					<h4> Book Store </h4>
-				</div>
-			</li>
-		</ul>
-
-
+		<div style="padding-top:25px;text-align:left">
+		<nav class="menu">
+		  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+		  <label class="menu-open-button" for="menu-open">
+			<span class="hamburger hamburger-1"></span>
+			<span class="hamburger hamburger-2"></span>
+			<span class="hamburger hamburger-3"></span>
+		  </label>
+		  
+		  <div class="menu-item" id="one" onclick="toggleSingleComplete('1')"> 
+			<i class="fa fa-desktop"><br>Web App</i>
+		  </div>
+		  <div class="menu-item" id="two" onclick="toggleSingleComplete('2')"> 
+			<i class="fa fa-gamepad"><br>Gaming</i> 
+		  </div>
+		  <div class="menu-item" id="three" onclick="toggleSingleComplete('3')">
+			<i class="fa fa-shopping-cart"><br>Shopping</i> 
+		  </div>
+		  <div class="menu-item" id="four" onclick="toggleSingleComplete('4')">
+			<i class="fa fa-film"><br>Film</i> 
+		  </div>
+		  <div class="menu-item" id="five" onclick="toggleSingleComplete('5')">
+			<i class="fa fa-book"><br>Book Store</i> 
+		  </div>
+		 <!-- <div class="menu-item" id="five" onclick="toggleSingleComplete('6')">
+			<i class="fa fa-film"><br>Film</i> 
+		  </div>-->
+		</nav>
+		</div>
 <!-- 4. Paralex Project view ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 
-		<div id="projects" class="allproj">
+		<div id="projects" class="allproj" style="z-index:-1";>
 			<div id="proj1" class="proj">
         <div id="filmStyle" class="proj1c">
           <h1 class="proj1c" id="filmTitle">Share Doc</h1>

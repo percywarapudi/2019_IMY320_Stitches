@@ -1,5 +1,5 @@
 //1. Default Behaviour
-var completes = document.querySelectorAll(".complete");
+var completes = document.querySelectorAll(".menu-item");
 //var toggleButton = document.getElementById("toggleButton");
 
 function toggleComplete(){

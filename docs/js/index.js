@@ -134,7 +134,7 @@ var projOpt = 10;
 $(document).ready(function(){
 	//var checked = 0;
 
-	$("#1").click(function(){
+	$("#one").click(function(){
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
@@ -170,7 +170,7 @@ $(document).ready(function(){
   $(document).ready(function(){
 	//var checked = 0;
 
-  	$("#2").click(function(){
+  	$("#two").click(function(){
     $(".proj1c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
@@ -206,7 +206,7 @@ $(document).ready(function(){
   $(document).ready(function(){
 	//var checked = 0;
 
-	$("#3").click(function(){
+	$("#three").click(function(){
     $(".proj1c").fadeOut("slow");
     $(".proj2c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
@@ -245,7 +245,7 @@ $(document).ready(function(){
   $(document).ready(function(){
 	//var checked = 0;
 
-	$("#4").click(function(){
+	$("#four").click(function(){
     $(".proj1c").fadeOut("slow");
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
@@ -286,7 +286,7 @@ $(document).ready(function(){
 	console.log(checked);
 
 
-	$("#5").click(function(){
+	$("#five").click(function(){
     $(".proj1c").fadeOut("slow");
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");

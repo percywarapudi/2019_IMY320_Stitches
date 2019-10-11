@@ -291,7 +291,7 @@ html, body {
 	position:absolute;
 	height: 30%;
 	width:30%;
-	top:210%;
+	top:200%;
 	left:22%;
 	z-index: 8;
 	border: 2px solid white;
@@ -301,7 +301,7 @@ html, body {
 #WebAppImage
 {
 	position:absolute;
-	height: 80%;
+	height: 70%;
 	width:50%;
 	top:160%;
 	left:27%;
@@ -330,7 +330,7 @@ html, body {
 	z-index: 3;
 	width: 600px;
 	height: 800px;
-	top: 150%;
+	top: 140%;
 	left:0%;
 }
 
@@ -339,7 +339,7 @@ html, body {
 	position:absolute;
 	height: 30%;
 	width:30%;
-	top:155%;
+	top:145%;
 	left:33%;
 	z-index: 9;
 	border: 2px solid white;
@@ -351,7 +351,7 @@ html, body {
 	position:absolute;
 	height: 40%;
 	width:40%;
-	top:180%;
+	top:170%;
 	left:39%;
 	z-index: 7;
 	border: 2px solid white;

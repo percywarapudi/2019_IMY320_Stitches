@@ -1,5 +1,7 @@
 //1. Default Behaviour
 var completes = document.querySelectorAll(".menu-item");
+var selectedMenu = false;
+var currentElement = '';
 //var toggleButton = document.getElementById("toggleButton");
 
 function toggleComplete(){
@@ -32,10 +34,11 @@ var four = document.getElementById("four");
 var five = document.getElementById("five");
 
 function toggleSingleComplete(proj){
+	
+	if(currentElement != proj)
+		selectedMenu = false;
 	//alert(proj);
 	switch(proj) {
-
-
 		case "1":
 			completes[0].classList.toggle('complete',true);
 			completes[1].classList.toggle('complete',false);
@@ -49,7 +52,13 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			resetMenus();
-			setAsSelectedMenu("#one")
+			if(selectedMenu == false){
+				setAsSelectedMenu("#one");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 		case "2":
 			completes[0].classList.toggle('complete',false);
@@ -64,7 +73,13 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			resetMenus();
-			setAsSelectedMenu("#two")
+			if(selectedMenu == false){
+				setAsSelectedMenu("#two");
+				currentElement = proj;
+				selectedMenu = true;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 		case "3":
 			completes[0].classList.toggle('complete',false);
@@ -79,7 +94,13 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			resetMenus();
-			setAsSelectedMenu("#three")
+			if(selectedMenu == false){
+				setAsSelectedMenu("#three")
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 		case "4":
 			completes[0].classList.toggle('complete',false);
@@ -94,7 +115,13 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "block";
 			document.getElementById("proj5").style.display = "none";
 			resetMenus();
-			setAsSelectedMenu("#four")
+			if(selectedMenu == false){
+				setAsSelectedMenu("#four");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 
 		case "5":
@@ -110,7 +137,13 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "block";
 			resetMenus();
-			setAsSelectedMenu("#five")
+			if(selectedMenu == false){
+				setAsSelectedMenu("#five");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 
       case "6":
@@ -127,8 +160,14 @@ function toggleSingleComplete(proj){
         document.getElementById("proj3").style.display = "none";
         document.getElementById("proj4").style.display = "none";
         document.getElementById("proj5").style.display = "none";
-		resetMenus();
-		setAsSelectedMenu("#one")
+		/*resetMenus();
+		if(selectedMenu == false){
+			setAsSelectedMenu("#six");
+			selectedMenu = true;
+		} else {
+			selectedMenu = false;
+		}*/
+		break;
 		default:
 			//alert(previous.id);
 			//previous.classList.toggle('complete');

@@ -12,6 +12,16 @@ $(document).ready(function() {
 });
 
 
+function resetMenus(){
+	$('.menu-item').each(function() {
+		$(this).css({"background":"#E98074","color":"#fff"});
+	});
+}
+
+
+function setAsSelectedMenu(obj){
+	$(obj).css({"background":"white","cursor":"pointer","color":"#E98074","border-style": "solid","border-width":"1px","border-color": "#E98074"});
+}
 
 
 //2. Select Single Project element
@@ -38,6 +48,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
+			resetMenus();
+			setAsSelectedMenu("#one")
 			break;
 		case "2":
 			completes[0].classList.toggle('complete',false);
@@ -51,6 +63,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
+			resetMenus();
+			setAsSelectedMenu("#two")
 			break;
 		case "3":
 			completes[0].classList.toggle('complete',false);
@@ -64,6 +78,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "block";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
+			resetMenus();
+			setAsSelectedMenu("#three")
 			break;
 		case "4":
 			completes[0].classList.toggle('complete',false);
@@ -77,6 +93,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "block";
 			document.getElementById("proj5").style.display = "none";
+			resetMenus();
+			setAsSelectedMenu("#four")
 			break;
 
 		case "5":
@@ -91,6 +109,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "block";
+			resetMenus();
+			setAsSelectedMenu("#five")
 			break;
 
       case "6":
@@ -107,7 +127,8 @@ function toggleSingleComplete(proj){
         document.getElementById("proj3").style.display = "none";
         document.getElementById("proj4").style.display = "none";
         document.getElementById("proj5").style.display = "none";
-
+		resetMenus();
+		setAsSelectedMenu("#one")
 		default:
 			//alert(previous.id);
 			//previous.classList.toggle('complete');
@@ -122,6 +143,7 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
+			resetMenus();
 
 	}
 

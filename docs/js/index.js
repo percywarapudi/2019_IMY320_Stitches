@@ -1,7 +1,5 @@
 //1. Default Behaviour
 var completes = document.querySelectorAll(".menu-item");
-var selectedMenu = false;
-var currentElement = '';
 //var toggleButton = document.getElementById("toggleButton");
 
 function toggleComplete(){
@@ -14,16 +12,6 @@ $(document).ready(function() {
 });
 
 
-function resetMenus(){
-	$('.menu-item').each(function() {
-		$(this).css({"background":"#E98074","color":"#fff"});
-	});
-}
-
-
-function setAsSelectedMenu(obj){
-	$(obj).css({"background":"white","cursor":"pointer","color":"#E98074","border-style": "solid","border-width":"1px","border-color": "#E98074"});
-}
 
 
 //2. Select Single Project element
@@ -33,12 +21,12 @@ var three = document.getElementById("three");
 var four = document.getElementById("four");
 var five = document.getElementById("five");
 
+
 function toggleSingleComplete(proj){
-	
-	if(currentElement != proj)
-		selectedMenu = false;
 	//alert(proj);
 	switch(proj) {
+
+
 		case "1":
 			completes[0].classList.toggle('complete',true);
 			completes[1].classList.toggle('complete',false);
@@ -51,14 +39,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
-			resetMenus();
-			if(selectedMenu == false){
-				setAsSelectedMenu("#one");
-				selectedMenu = true;
-				currentElement = proj;
-			} else {
-				selectedMenu = false;
-			}
+      document.getElementById("proj6").style.display = "block";
+
 			break;
 		case "2":
 			completes[0].classList.toggle('complete',false);
@@ -72,14 +54,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
-			resetMenus();
-			if(selectedMenu == false){
-				setAsSelectedMenu("#two");
-				currentElement = proj;
-				selectedMenu = true;
-			} else {
-				selectedMenu = false;
-			}
+      document.getElementById("proj6").style.display = "block";
+
 			break;
 		case "3":
 			completes[0].classList.toggle('complete',false);
@@ -93,14 +69,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "block";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
-			resetMenus();
-			if(selectedMenu == false){
-				setAsSelectedMenu("#three")
-				selectedMenu = true;
-				currentElement = proj;
-			} else {
-				selectedMenu = false;
-			}
+      document.getElementById("proj6").style.display = "block";
+
 			break;
 		case "4":
 			completes[0].classList.toggle('complete',false);
@@ -114,14 +84,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "block";
 			document.getElementById("proj5").style.display = "none";
-			resetMenus();
-			if(selectedMenu == false){
-				setAsSelectedMenu("#four");
-				selectedMenu = true;
-				currentElement = proj;
-			} else {
-				selectedMenu = false;
-			}
+      document.getElementById("proj6").style.display = "block";
+
 			break;
 
 		case "5":
@@ -136,14 +100,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "block";
-			resetMenus();
-			if(selectedMenu == false){
-				setAsSelectedMenu("#five");
-				selectedMenu = true;
-				currentElement = proj;
-			} else {
-				selectedMenu = false;
-			}
+      document.getElementById("proj6").style.display = "block";
+
 			break;
 
       case "6":
@@ -160,14 +118,9 @@ function toggleSingleComplete(proj){
         document.getElementById("proj3").style.display = "none";
         document.getElementById("proj4").style.display = "none";
         document.getElementById("proj5").style.display = "none";
-		/*resetMenus();
-		if(selectedMenu == false){
-			setAsSelectedMenu("#six");
-			selectedMenu = true;
-		} else {
-			selectedMenu = false;
-		}*/
-		break;
+        document.getElementById("proj6").style.display = "block";
+
+
 		default:
 			//alert(previous.id);
 			//previous.classList.toggle('complete');
@@ -182,7 +135,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
-			resetMenus();
+      document.getElementById("proj6").style.display = "block";
+
 
 	}
 
@@ -200,6 +154,8 @@ $(document).ready(function(){
     $(".proj3c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
     $(".proj5c").fadeOut("slow");
+    $(".proj6c").fadeOut("slow");
+
     if(projOpt==10)
     {
       $("#projects").animate({height: "165%"});
@@ -210,8 +166,10 @@ $(document).ready(function(){
 		{
 			if(checked != 0 && projOpt==1)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
         $(".proj1c").fadeOut("slow");
+        $(".proj6c").fadeIn("slow");
+
 				checked = 0;
 			}
 			else// if(checked == 0 )
@@ -236,6 +194,9 @@ $(document).ready(function(){
     $(".proj3c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
     $(".proj5c").fadeOut("slow");
+    $(".proj6c").fadeOut("slow");
+
+
     if(projOpt==10)
     {
       $("#projects").animate({height: "165%"});
@@ -246,8 +207,10 @@ $(document).ready(function(){
     {
 			if(checked != 0 && projOpt==2)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
         $(".proj2c").fadeOut("slow");
+        $(".proj6c").fadeIn("slow");
+
 
 				checked = 0;
 			}
@@ -255,6 +218,7 @@ $(document).ready(function(){
 			{
 				$("#projects").animate({height: "165%"});
         $(".proj2c").fadeIn("slow");
+
 
 				checked = 1;
 			}
@@ -272,6 +236,8 @@ $(document).ready(function(){
     $(".proj2c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
     $(".proj5c").fadeOut("slow");
+    $(".proj6c").fadeOut("slow");
+
 
     if(projOpt==10)
     {
@@ -285,8 +251,12 @@ $(document).ready(function(){
 		{
 			if(checked != 0 && projOpt==3)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
         $(".proj3c").fadeOut("slow");
+        $(".proj6c").fadeIn("slow");
+
+      //  $(".proj1c").fadeIn("slow");
+
 
 				checked = 0;
 			}
@@ -311,6 +281,8 @@ $(document).ready(function(){
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
     $(".proj5c").fadeOut("slow");
+    $(".proj6c").fadeOut("slow");
+
 
     if(projOpt==10)
     {
@@ -324,8 +296,10 @@ $(document).ready(function(){
 		{
 			if(checked != 0 && projOpt==4)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
         $(".proj4c").fadeOut("slow");
+        $(".proj6c").fadeIn("slow");
+
 
 				checked = 0;
 			}
@@ -352,6 +326,8 @@ $(document).ready(function(){
     $(".proj2c").fadeOut("slow");
     $(".proj3c").fadeOut("slow");
     $(".proj4c").fadeOut("slow");
+    $(".proj6c").fadeOut("slow");
+
 
     if(projOpt==10)
     {
@@ -365,8 +341,10 @@ $(document).ready(function(){
 		{
 			if(checked != 0 && projOpt==5)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
         $(".proj5c").fadeOut("slow");
+        $(".proj6c").fadeIn("slow");
+
 
 				checked = 0;
 			}
@@ -393,7 +371,7 @@ $(document).ready(function(){
 		{
 			if(checked != 0)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
 				checked = 0;
 			}
 			else if(checked == 0 )
@@ -416,7 +394,7 @@ $(document).ready(function(){
 		{
 			if(checked != 0)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
 				checked = 0;
 			}
 			else if(checked == 0 )
@@ -439,7 +417,7 @@ $(document).ready(function(){
 		{
 			if(checked != 0)
 			{
-				$("#projects").animate({height: "50%"});
+				$("#projects").animate({height: "68%"});
 				checked = 0;
 			}
 			else if(checked == 0 )

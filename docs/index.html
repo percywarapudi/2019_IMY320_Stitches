@@ -7,15 +7,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/projects.css">
+	      <link rel="stylesheet" href="css/projects.css">
         <link rel="stylesheet" href="css/title.css">
+        <link rel="stylesheet" type="text/css" href="css/time.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
 
         <!-- Js -->
         <!-- >script src="js/vendor/modernizr-2.6.2.min.js"></script -->
@@ -72,19 +76,19 @@
 
         <div class="w3-row w3-center w3-dark-grey w3-padding-16">
             <div class="w3-quarter w3-section">
-                <span class="w3-large">14+</span><br>
+                <span class="w3-xlarge">14+</span><br>
                 Partners
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-large">73+</span><br>
+                <span class="w3-xlarge">73+</span><br>
                 Projects Done
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-large">55+</span><br>
+                <span class="w3-xlarge">55+</span><br>
                 Happy Clients
             </div>
             <div class="w3-quarter w3-section">
-                <span class="w3-large">150+</span><br>
+                <span class="w3-xlarge">150+</span><br>
                 Meetings
             </div>
         </div>
@@ -100,21 +104,22 @@
 			<span class="hamburger hamburger-3"></span>
 		  </label>
 
-		  <div class="menu-item" id="one">
+		  <div class="menu-item" id="one" onclick="toggleSingleComplete('1')">
 			<i class="fa fa-desktop"><br>Web App</i>
 		  </div>
-		  <div class="menu-item" id="two">
+		  <div class="menu-item" id="two" onclick="toggleSingleComplete('2')">
 			<i class="fa fa-gamepad"><br>Gaming</i>
 		  </div>
-		  <div class="menu-item" id="three">
+		  <div class="menu-item" id="three" onclick="toggleSingleComplete('3')">
 			<i class="fa fa-shopping-cart"><br>Shopping</i>
 		  </div>
-		  <div class="menu-item" id="four">
+		  <div class="menu-item" id="four" onclick="toggleSingleComplete('4')">
 			<i class="fa fa-film"><br>Film</i>
 		  </div>
-		  <div class="menu-item" id="five">
+		  <div class="menu-item" id="five" onclick="toggleSingleComplete('5')">
 			<i class="fa fa-book"><br>Book Store</i>
 		  </div>
+
 		 <!-- <div class="menu-item" id="five" onclick="toggleSingleComplete('6')">
 			<i class="fa fa-film"><br>Film</i>
 		  </div>-->
@@ -140,6 +145,7 @@
 				<h1 class="proj2c">The Game Online</h1>
 				<p id="h" class="proj2c"> Teenager wins big by Playing Fortnite. You too can stand a chance to compete against the best gamers known in the Gaming world.
   	</p>
+
 			</div>
 			<div id="proj3" class="proj">
 				<h1 class="proj3c">The Online Shopping</h1>
@@ -165,6 +171,95 @@
 				<p id="h" class="proj5c"> For the latest books click below.
   	</p>
 			</div>
+      <div id="proj6" class="proj">
+        <h1 class="proj6c"></h1>
+        <div class="proj6c">
+          <div class="body container">
+            <div class="timeline">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                <div class="swiper-slide" style="background-image: url(image/b13.jpg);" data-year="JULY">
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">July</span>
+                    <h4 class="timeline-title">IDEALISING</h4>
+                    <p class="timeline-text">brainstorming game ideas appropriate for our brand.
+                    </p>
+                  </div>
+
+                </div>
+                <div class="swiper-slide" style="background-image: url(image/b13.jpg);" data-year="AUGUST">
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">August</span>
+                    <h4 class="timeline-title">PLANNING</h4>
+                    <p class="timeline-text">Planning the game logistics.
+                    </p>
+                  </div>
+
+                </div>
+                <div class="swiper-slide" style="background-image: url(image/b13.jpg);" data-year="SEPTEMBER">
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">September</span>
+                    <h4 class="timeline-title">DEVELOPING</h4>
+                    <p class="timeline-text">Programming and designing the game.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide" style="background-image: url(image/b13.jpg);" data-year="OCTOBER">
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">October</span>
+                    <h4 class="timeline-title">PROTOTYPE</h4>
+                    <p class="timeline-text">Testing out the prototype. Evaluating its popularity amongst users.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+      <script >
+
+      $(function(){
+        var timelineSwiper =new Swiper ('.timeline .swiper-container',{
+          direction: 'vertical',
+          loop:false,
+          speed: 1600,
+          pagination: '.swiper-pagination',
+          paginationBulletRender: function(swiper, index,className){
+            var year = document.querySelectorAll('.swiper-slide')
+            [index].getAttribute('data-year');
+            return'<span class="'+ className+'">'+ year+'</span>';
+          },
+          paginationClickable:true,
+          nextButton:'.swiper-button-next',
+          prevButton:'.swiper-button-prev',
+          breakpoints:{
+            768:{
+              direction:'horizontal'
+            }
+          }
+        });
+
+      });
+
+
+
+      </script>
+
 		</div>
 
 

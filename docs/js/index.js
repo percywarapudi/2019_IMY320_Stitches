@@ -13,12 +13,12 @@ $(document).ready(function() {
 	//toggleButton.onclick = toggleComplete();
 });
 
-
 function resetMenus(){
 	$('.menu-item').each(function() {
 		$(this).css({"background":"#E98074","color":"#fff"});
 	});
 }
+
 
 function setAsSelectedMenu(obj){
 	$(obj).css({"background":"white","cursor":"pointer","color":"#E98074","border-style": "solid","border-width":"1px","border-color": "#E98074"});
@@ -31,18 +31,6 @@ var two = document.getElementById("two");
 var three = document.getElementById("three");
 var four = document.getElementById("four");
 var five = document.getElementById("five");
-
-
-function setSelectedItem(element_,proj){
-	resetMenus();
-	if(selectedMenu == false){
-		setAsSelectedMenu(element_);
-		selectedMenu = true;
-		currentElement = proj;
-	} else {
-		selectedMenu = false;
-	}
-}
 
 function toggleSingleComplete(proj){
 	
@@ -65,7 +53,15 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			document.getElementById("proj6").style.display = "block";
-			setSelectedItem("#one",proj);
+			
+			resetMenus();
+			if(selectedMenu == false){
+				setAsSelectedMenu("#one");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 		case "2":
 			completes[0].classList.toggle('complete',false);
@@ -80,7 +76,15 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			document.getElementById("proj6").style.display = "block";
-			setSelectedItem("#two",proj);
+			
+			resetMenus();
+			if(selectedMenu == false){
+				setAsSelectedMenu("#two");
+				currentElement = proj;
+				selectedMenu = true;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 		case "3":
 			completes[0].classList.toggle('complete',false);
@@ -95,7 +99,15 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
 			document.getElementById("proj6").style.display = "block";
-			setSelectedItem("#three",proj);
+			
+			resetMenus();
+			if(selectedMenu == false){
+				setAsSelectedMenu("#three");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 		case "4":
 			completes[0].classList.toggle('complete',false);
@@ -110,7 +122,14 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "block";
 			document.getElementById("proj5").style.display = "none";
 			document.getElementById("proj6").style.display = "block";
-			setSelectedItem("#four",proj);
+			resetMenus();
+			if(selectedMenu == false){
+				setAsSelectedMenu("#four");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 
 		case "5":
@@ -126,7 +145,15 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "block";
 			document.getElementById("proj6").style.display = "block";
-			setSelectedItem("#five",proj);
+			
+			resetMenus();
+			if(selectedMenu == false){
+				setAsSelectedMenu("#five");
+				selectedMenu = true;
+				currentElement = proj;
+			} else {
+				selectedMenu = false;
+			}
 			break;
 
       case "6":
@@ -160,8 +187,8 @@ function toggleSingleComplete(proj){
 			document.getElementById("proj3").style.display = "none";
 			document.getElementById("proj4").style.display = "none";
 			document.getElementById("proj5").style.display = "none";
-      document.getElementById("proj6").style.display = "block";
-
+			document.getElementById("proj6").style.display = "block";
+			resetMenus();
 
 	}
 
@@ -489,7 +516,7 @@ document.getElementById("four").onclick = toggleSingleComplete(4);
 document.getElementById("five").onclick = toggleSingleComplete(5);*/
 
 
-one.addEventListener("click", function() {
+/*one.addEventListener("click", function() {
 	toggleSingleComplete("1");
 });
 
@@ -505,5 +532,5 @@ four.addEventListener("click", function() {
 });
 five.addEventListener("click", function() {
 	toggleSingleComplete("5");
-});
+});*/
 toggleSingleComplete("6");

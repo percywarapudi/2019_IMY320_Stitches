@@ -95,7 +95,7 @@ h2 {
   text-align: left;
 }
 .menu-item:hover {
-  background: white;//#00bcd4;
+  background: white;
   cursor: pointer;
   color: #E98074;
   border-style: solid;
@@ -107,7 +107,7 @@ h2 {
   /*  outline: 0px solid white;
 	color: #fff;
 	background: #00bcd4; */
-  background: white;//#00bcd4;
+  background: white;
   cursor: pointer;
   color: #E98074;
   border-style: solid;
@@ -161,7 +161,7 @@ h2 {
 
 .menu-open:checked ~ .menu-item:nth-child(3) {
   transition-duration: 190ms;
-  transform: translate3d(110px, 0, 0);
+  transform: translate3d(100px, 0, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
   transition-duration: 290ms;

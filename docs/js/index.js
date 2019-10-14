@@ -1,6 +1,8 @@
 //1. Default Behaviour
 var completes = document.querySelectorAll(".menu-item");
 //var toggleButton = document.getElementById("toggleButton");
+var selectedMenu = false;
+var currentElement = '';
 
 function toggleComplete(){
   var lastComplete = completes[completes.length - 1];

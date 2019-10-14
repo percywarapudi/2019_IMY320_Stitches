@@ -88,7 +88,7 @@ h2 {
   position: absolute;
   left: 32%;
   margin-left: 0px;
-  width: 650px;
+  width: 950px;
   height: 150px;
   box-sizing: border-box;
   font-size: 15px;
@@ -165,20 +165,20 @@ h2 {
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
   transition-duration: 290ms;
-  transform: translate3d(220px, 0, 0);
+  transform: translate3d(280px, 0, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(5) {
   transition-duration: 390ms;
-  transform: translate3d(330px, 0, 0);
+  transform: translate3d(450px, 0, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(6) {
   transition-duration: 490ms;
-  transform: translate3d(440px, 0, 0);
+  transform: translate3d(630px, 0, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(7) {
   transition-duration: 590ms;
-  transform: translate3d(550px, 0, 0);
+  transform: translate3d(810px, 0, 0);
 }

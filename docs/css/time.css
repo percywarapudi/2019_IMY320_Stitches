@@ -8,6 +8,11 @@ html{
 	font-size: 14px;
 
 }
+
+.timeline-text
+{
+	font-size: 18px;
+}
 /*test*/
 .container
 {
@@ -192,6 +197,7 @@ html{
 .timeline .swiper-button-next:hover {
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
+					
 }
 @media screen and (min-width: 768px) {
   .timeline .swiper-slide::after {

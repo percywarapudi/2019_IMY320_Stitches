@@ -107,6 +107,7 @@ function toggleSingleComplete(proj){
 				currentElement = proj;
 			} else {
 				selectedMenu = false;
+				document.getElementById("proj3").style.display = "none";
 			}
 			break;
 		case "4":
@@ -153,6 +154,7 @@ function toggleSingleComplete(proj){
 				currentElement = proj;
 			} else {
 				selectedMenu = false;
+				document.getElementById("proj5").style.display = "none";
 			}
 			break;
 
